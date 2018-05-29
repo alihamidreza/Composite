@@ -45,7 +45,7 @@
         <span class=""><div class="animated-icon1"><span></span><span></span><span></span></div></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto menu">
           <li class="nav-item active">
             <a class="nav-link" href="/">صفحه اصلی
               <span class="sr-only">(current)</span>
@@ -57,8 +57,93 @@
           <li class="nav-item">
             <a class="nav-link" href="#">مقالات</a>
           </li>
+            <li class="nav-item log-re animated bounceInDown">
+                <button type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal" style="background: transparent !important;border: none;cursor: pointer">
+                    ثبت نام
+                </button>
+          </li>
+            <li class="nav-item animated bounceInDown">
+                <button type="button" class="nav-link" data-toggle="modal" data-target="#modalLoginAvatar" style="background: transparent !important;border: none;cursor: pointer">
+                    ورود
+                </button>
+            </li>
         </ul>
-        </form>
+          <!--Modal: Login with Avatar Form-->
+          <div class="modal fade" id="modalLoginAvatar" tabindex="-100000" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+
+                      <!--Header-->
+                      <div class="modal-header">
+                          <img src="images/download.png" alt="avatar" class="rounded-circle img-responsive">
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body text-center mb-1">
+
+                          <h5 class="mt-1 mb-2">ورود</h5>
+
+                          <div class="md-form ml-0 mr-0 right">
+                              <input type="email" class="form-control form-control-sm validate ml-0" placeholder="ایمیل خود را وارد کنید">
+                          </div>
+
+                          <div class="md-form ml-0 mr-0 right" >
+                              <input type="password" class="form-control form-control-sm validate ml-0" placeholder="رمز عبور خود را وارد کنید">
+                          </div>
+                          <div class="md-form ml-0 mr-0 right" >
+                              <input type="password" class="form-control form-control-sm validate ml-0" placeholder="رمز عبور خود را وارد کنید">
+                          </div>
+                          <div class="text-center mt-4">
+                              مرا به خاطر بسپار <input type="checkbox" placeholder="مرا به خاطر بسپار">
+                          </div>
+                          <div class="text-center mt-4">
+                              <button class="btn btn-success mt-1">  ورود <i class="fa fa-sign-in ml-1"></i></button>
+                          </div>
+                          <br>
+                          <a class="dropdown-item" href="#">رمز عبور را فراموش کردید؟</a>
+                      </div>
+
+                  </div>
+                  <!--/.Content-->
+              </div>
+          </div>
+          <!--Modal: Login with Avatar Form-->
+          <div class="modal fade" id="exampleModal" tabindex="-100000" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+
+                      <!--Header-->
+                      <div class="modal-header">
+                          <img src="images/download.png" alt="avatar" class="rounded-circle img-responsive">
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body text-center mb-1">
+
+                          <h5 class="mt-1 mb-2">ثبت نام</h5>
+
+                          <div class="md-form ml-0 mr-0 right">
+                              <input type="email" class="form-control form-control-sm validate ml-0" placeholder="ایمیل را وارد کنید">
+                          </div>
+                          <div class="md-form ml-0 mr-0 right">
+                              <input type="text" class="form-control form-control-sm validate ml-0" placeholder="نام کاربری را وارد کنید">
+                          </div>
+                          <div class="md-form ml-0 mr-0 right" >
+                              <input type="password" class="form-control form-control-sm validate ml-0" placeholder="رمز عبور خود را وارد کنید">
+                          </div>
+                          <div class="md-form ml-0 mr-0 right" >
+                              <input type="password" class="form-control form-control-sm validate ml-0" placeholder="تکرار رمز عبور را وارد کنید">
+                          </div>
+
+                          <div class="text-center mt-4">
+                              <button class="btn btn-success mt-1">ثبت نام <i class="fa fa-sign-in ml-1"></i></button>
+                          </div>
+                      </div>
+
+                  </div>
+                  <!--/.Content-->
+              </div>
+          </div>
       </div>
     </div>
   </nav>
@@ -523,7 +608,6 @@ data-aos-duration="">
                   </div>
                 </div>
                 <!-- Grid column -->
-      
               </div>
               <!-- Grid row -->
       
